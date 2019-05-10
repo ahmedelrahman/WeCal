@@ -1,5 +1,7 @@
 {
   "name": "WeCal",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

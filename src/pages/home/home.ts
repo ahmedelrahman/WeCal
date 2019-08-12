@@ -49,4 +49,16 @@ export class HomePage {
     })
   }
 
+  /** sendVoice is a function that will send the user's voice message to Dialogflow*/
+  sendVoice(){
+    
+    window["ApiAIPlugin"].requestVoice({}, 
+      (response)=>{
+        alert(response.result.fulfillment.speech)
+      }, (error)=>{
+        alert(error)
+      }
+    )
+  }
+
 }
